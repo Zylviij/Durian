@@ -8,6 +8,16 @@ $( function() {
 			$( ".error-log" ).hide() // .css("display", "none");
 		}
 	} )
+
+	$( "#user-info-box" ).prop("checked", false);
+
+	$( "#user-info-box" ).change( function() {
+		if ( $( "#user-info-box" ).is( ":checked" ) ) {
+			$( ".user-info-table" ).show() // .css("display", "inline");
+		} else {
+			$( ".user-info-table" ).hide() // .css("display", "none");
+		}
+	} )
 } );
 
 /*

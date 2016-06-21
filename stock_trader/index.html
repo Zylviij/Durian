@@ -3,43 +3,46 @@
 <head>
     <title>Currency Trader</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/cyborg/bootstrap.css" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="static/main.css">
 </head>
 <body>
     <div class="container-fluid">
         <div class="user-info">
             <h1>Username</h1>
-            <table class="table table-striped">
-                <tr>
-                    <th>Balance</th>
-                    <th>#######</th>
-                </tr>
-                <tr>
-                    <td>Unrealised P/L</td>
-                    <td>##############</td>
-                </tr>
-                <tr>
-                    <td>Realised P/L</td>
-                    <td>############</td>
-                </tr>
-                <tr>
-                    <td>Trades</td>
-                    <td>######</td>
-                </tr>
-                <tr>
-                    <td>Orders</td>
-                    <td>######</td>
-                </tr>
-                <tr>
-                    <td>Margin Used</td>
-                    <td>###########</td>
-                </tr>
-                <tr>
-                    <td>Margin Available</td>
-                    <td>################</td>
-                </tr>
-            </table>
+            <label><input id="user-info-box" type="checkbox"> Show User Information</label>
+            <div class="user-info-table">
+                <table class="table table-striped">
+                    <tr>
+                        <th>Balance</th>
+                        <th>#######</th>
+                    </tr>
+                    <tr>
+                        <td>Unrealised P/L</td>
+                        <td>##############</td>
+                    </tr>
+                    <tr>
+                        <td>Realised P/L</td>
+                        <td>############</td>
+                    </tr>
+                    <tr>
+                        <td>Trades</td>
+                        <td>######</td>
+                    </tr>
+                    <tr>
+                        <td>Orders</td>
+                        <td>######</td>
+                    </tr>
+                    <tr>
+                        <td>Margin Used</td>
+                        <td>###########</td>
+                    </tr>
+                    <tr>
+                        <td>Margin Available</td>
+                        <td>################</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div class="pairs">
             <!-- List of Pairs -->
@@ -138,7 +141,6 @@
                             <td>Description</td>
                             <td><button>Comment</button></td>
                         </tr>
-
                     </table>
                 </div>
             </div>

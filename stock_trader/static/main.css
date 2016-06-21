@@ -3,3 +3,7 @@
 	overflow-y: scroll;
 	display: none;
 }
+
+.user-info-table {
+	display: none;
+}
