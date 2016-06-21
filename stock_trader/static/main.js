@@ -1,4 +1,16 @@
+$( function() {
+	$( "#error-box" ).prop("checked", false);
 
+	$( "#error-box" ).change( function() {
+		if ( $( "#error-box" ).is( ":checked" ) ) {
+			$( ".error-log" ).show() // .css("display", "inline");
+		} else {
+			$( ".error-log" ).hide() // .css("display", "none");
+		}
+	} )
+} );
+
+/*
 var httpRequest;
 
 function makeRequest(url) {
@@ -22,4 +34,4 @@ function alertContents() {
 		}
 	}
 }
-
+*/
