@@ -8,18 +8,56 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="header">
-
+		<div class="user-info">
+			<h1>Username</h1>
+			<table class="table table-striped">
+				<tr>
+				    <th>Balance</th>
+				    <th>#######</th>
+				  </tr>
+				  <tr>
+				    <td>Unrealised P/L</td>
+				    <td>##############</td>
+				  </tr>
+				  <tr>
+				    <td>Realised P/L</td>
+				    <td>############</td>
+				  </tr>
+				  <tr>
+				    <td>Trades</td>
+				    <td>######</td>
+				  </tr>
+				  <tr>
+				    <td>Orders</td>
+				    <td>######</td>
+				  </tr>
+				  <tr>
+				    <td>Margin Used</td>
+				    <td>###########</td>
+				  </tr>
+				  <tr>
+				    <td>Margin Available</td>
+				    <td>################</td>
+				  </tr>
+			</table>
+		</div>
+		<div class="pairs">
+			<!-- List of Pairs -->
+			<!-- Red : Offline -->
+			<!-- Orange : Online, but Inelligible -->
+			<!-- Green : Online -->
 		</div>
 		<div class="body">
 			<div class="graph">
+				<!--  -->
 
 			</div>
 		<div>
 		<div class="footer">
-
+			<label><input type="checkbox" value="first_checkbox"> Show Errors</label>
 		</div>
 		<div class="error-log">
+			<div class="error"></div>
 		</div>
 	</div>
 	<script src="static/main.js"></script>
